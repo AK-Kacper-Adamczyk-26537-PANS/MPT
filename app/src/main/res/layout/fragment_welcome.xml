@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingTop="30dp"
+    android:paddingBottom="10dp">
+
+    <!-- Obraz na górze -->
+    <ImageView
+        android:id="@+id/top_image"
+        android:layout_width="match_parent"
+        android:layout_height="433dp"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="25dp"
+        android:scaleType="fitXY"
+        android:src="@drawable/woman_home" />
+
+    <!-- Niebieski prostokąt z tekstem -->
+    <TextView
+        android:id="@+id/welcome_text"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/top_image"
+        android:layout_marginTop="-5dp"
+        android:background="@color/buttonBackground"
+        android:gravity="center"
+        android:paddingTop="30dp"
+        android:paddingBottom="30dp"
+        android:textSize="24sp" />
+
+    <TextView
+        android:id="@+id/description_text"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/welcome_text"
+        android:layout_marginTop="50dp"
+        android:gravity="center|left"
+        android:paddingLeft="30dp"
+        android:paddingRight="50dp"
+        android:textSize="18sp" />
+
+    <!-- Przycisk Logowania -->
+    <Button
+        android:id="@+id/buttonLogin"
+        android:layout_marginLeft="-20dp"
+        android:layout_width="170dp"
+        android:layout_height="75dp"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentStart="true"
+        android:background="@drawable/custom_button_2"
+        android:text="Logowanie"
+        android:textAllCaps="false"
+        android:textSize="16sp" />
+
+    <!-- Przycisk Rejestracji -->
+    <Button
+        android:id="@+id/buttonRegister"
+        android:layout_marginRight="-20dp"
+        android:layout_width="170dp"
+        android:layout_height="75dp"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentEnd="true"
+        android:background="@drawable/custom_button"
+        android:text="Rejestracja"
+        android:textAllCaps="false"
+        android:textSize="16sp" />
+</RelativeLayout>

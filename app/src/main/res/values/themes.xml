@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- Styl dla trybu jasnego -->
+    <style name="Theme.Firebaseapp" parent="Theme.AppCompat.Light.NoActionBar">
+        <item name="colorPrimary">@color/background_color</item>
+        <item name="colorPrimaryDark">@color/status_bar_color</item>
+        <item name="colorAccent">@color/buttonBackground</item>
+        <item name="android:windowBackground">@color/background_color</item>
+        <item name="android:textColor">@color/text_color</item>
+        <item name="android:editTextColor">@color/editTextColor</item>
+        <item name="android:editTextStyle">@color/editTextBackgroundColor</item>
+
+        <item name="android:navigationBarColor">@color/navigation_bar_color</item>
+        <item name="android:windowLightNavigationBar">true</item> <!-- Ciemne ikony na jasnym pasku nawigacji -->
+        <item name="android:windowLightStatusBar">true</item> <!-- Ciemne ikony na jasnym pasku statusu -->
+        <item name="android:windowDrawsSystemBarBackgrounds">true</item>
+        <item name="android:statusBarColor">@android:color/transparent</item>
+    </style>
+
+    <!-- Styl dla przycisków -->
+    <style name="TaskButtonStyle">
+        <item name="android:background">@drawable/custom_button_background</item>
+        <item name="android:textColor">@color/buttonText</item>
+        <item name="android:paddingHorizontal">20dp</item>
+        <item name="android:paddingVertical">12dp</item>
+        <item name="android:layout_marginTop">8dp</item>
+        <item name="android:layout_marginBottom">8dp</item>
+    </style>
+
+    <!-- Styl dla przycisków usuwania -->
+    <style name="TaskDeleteButtonStyle">
+        <item name="android:backgroundTint">@color/red</item>
+        <item name="android:textColor">@android:color/white</item>
+        <item name="android:background">@drawable/custom_button_background</item>
+        <item name="android:paddingHorizontal">20dp</item>
+        <item name="android:paddingVertical">12dp</item>
+        <item name="android:layout_marginTop">8dp</item>
+        <item name="android:layout_marginBottom">8dp</item>
+    </style>
+
+    <!-- Styl dla tytułów zadań -->
+    <style name="TaskTitleStyle">
+        <item name="android:textStyle">bold</item>
+        <item name="android:textSize">18sp</item>
+        <item name="android:textColor">@color/text_color</item>
+    </style>
+
+    <!-- Styl dla opisów zadań -->
+    <style name="TaskDescriptionStyle">
+        <item name="android:textSize">14sp</item>
+        <item name="android:textColor">@color/gray</item>
+    </style>
+
+    <!-- Styl dla etykiet -->
+    <style name="TaskLabelStyle">
+        <item name="android:textSize">16sp</item>
+        <item name="android:textColor">@color/text_color</item>
+    </style>
+</resources>

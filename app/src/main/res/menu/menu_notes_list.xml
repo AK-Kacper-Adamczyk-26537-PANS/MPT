@@ -1,0 +1,14 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item
+        android:id="@+id/menu_sort_date"
+        android:title="Sortuj po dacie" />
+    <item
+        android:id="@+id/menu_sort_title"
+        android:title="Sortuj po tytule" />
+    <item
+        android:id="@+id/menu_filter_recent"
+        android:title="Filtruj najnowsze" />
+    <item
+        android:id="@+id/menu_filter_creator"
+        android:title="Filtruj według twórcy" />
+</menu>

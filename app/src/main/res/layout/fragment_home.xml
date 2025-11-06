@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:padding="16dp">
+
+    <!-- RecyclerView, który wyświetli listę kół naukowych -->
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/clubs_recycler_view"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="70dp"
+        android:scrollbars="vertical"
+        tools:listitem="@layout/club_item" />
+
+</FrameLayout>

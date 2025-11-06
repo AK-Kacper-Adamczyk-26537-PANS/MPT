@@ -1,0 +1,64 @@
+<resources>
+    <string name="app_name">firebaseapp</string>
+
+    <string-array name="major_options">
+        <item>Automatyka i Robotyka</item>
+        <item>Budownictwo</item>
+        <item>Informatyka</item>
+        <item>Inżynieria Jakości w przedsiębiorstwie</item>
+        <item>Inżynieria Produkcji</item>
+        <item>Inżynieria Środowiska</item>
+        <item>Mechanika i budowa maszyn</item>
+
+        <item>Pielęgniarstwo</item>
+        <item>Położnictwo</item>
+        <item>Ratownictwo Medyczne</item>
+        <item>Wychowanie Fizyczne</item>
+        <item>Pielęgniarstwo II</item>
+
+        <item>Filologia angielska</item>
+        <item>Marketing Internetowy</item>
+        <item>Pedagogika</item>
+        <item>Dwujęzykowe studia dla tłumaczy</item>
+        <item>Pedagogika przedszkolna i wczesnoszkolna</item>
+
+        <item>Bezpieczeństwo wewnętrzne</item>
+        <item>Produkcja i bezpieczeństwo żywności</item>
+        <item>Turystyka i rekreacja</item>
+        <item>Zarządzanie</item>
+        <item>Zielarstwo</item>
+        <item>Zarządzanie II</item>
+    </string-array>
+
+    <string-array name="role_options">
+        <item>user</item>
+        <item>prezes</item>
+        <item>admin</item>
+    </string-array>
+
+    <!-- Opcje sortowania dla notatek -->
+    <string-array name="sort_options_notes">
+        <item>Data rosnąco</item>
+        <item>Data malejąco</item>
+        <item>Tytuł A-Z</item>
+        <item>Tytuł Z-A</item>
+    </string-array>
+
+    <!-- Opcje sortowania dla zadań -->
+    <string-array name="sort_options_tasks">
+        <item>Data wykonania rosnąco</item>
+        <item>Data wykonania malejąco</item>
+        <item>Tytuł A-Z</item>
+        <item>Tytuł Z-A</item>
+    </string-array>
+
+    <string-array name="priority_array">
+        <item>Niski</item>
+        <item>Średni</item>
+        <item>Wysoki</item>
+    </string-array>
+
+    <string name="open_nav">Open Navigation Drawer</string>
+    <string name="close_nav">Close Navigation Drawer</string>
+
+</resources>

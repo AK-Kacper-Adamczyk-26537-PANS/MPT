@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/itemMember"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:padding="12dp"
+    android:background="@drawable/rounded_edittext"
+    android:layout_marginHorizontal="20dp"
+    android:layout_marginBottom="20dp">
+<!--    android:background="?android:attr/selectableItemBackground">-->
+
+    <!-- Imię i Nazwisko -->
+    <TextView
+        android:id="@+id/textViewMemberName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Imię Nazwisko"
+        android:textSize="18sp"
+        android:textStyle="bold" />
+
+    <!-- Email -->
+    <TextView
+        android:id="@+id/textViewMemberEmail"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="email@example.com"
+        android:textSize="14sp"
+        android:layout_marginTop="4dp" />
+
+    <!-- Rola -->
+    <TextView
+        android:id="@+id/textViewMemberRole"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Rola: Członek"
+        android:textSize="14sp"
+        android:layout_marginTop="4dp" />
+
+</LinearLayout>

@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- Istniejące kolory -->
+    <color name="background_color">#FFFFFF</color> <!-- Biały tło -->
+    <color name="text_color">#000000</color> <!-- Czarny tekst -->
+
+    <color name="buttonBackground">#C0F7F7</color> <!-- Tło przycisku -->
+    <color name="buttonText">#000000</color> <!-- Tekst przycisku -->
+    <color name="buttonBorder">#FF35C5C5</color> <!-- Obramówka przycisku -->
+
+    <color name="editTextColor">#000000</color> <!-- Kolor tekstu w polach -->
+    <color name="editTextBackgroundColor">#F3F3F3</color> <!-- Kolor tła w polach -->
+    <color name="editTextBorderColor">#FF616161</color> <!-- Kolor obramowania w polach -->
+
+    <color name="navigation_bar_color">#FFFFFF</color> <!-- Kolor paska nawigacyjnego -->
+    <color name="status_bar_color">#FFFFFF</color> <!-- Kolor paska statusu -->
+
+    <color name="white">#FFFFFF</color>
+    <color name="black">#000000</color>
+    <color name="gray">#808080</color>
+    <color name="primary">#FF6200EE</color>
+    <color name="red">#FF0000</color>
+    <color name="purple_500">#6200EE</color>
+
+    <color name="colorPrimary">#3F51B5</color>
+    <color name="colorAccent">#FF4081</color>
+    <color name="colorWarning">#FF9800</color>
+    <color name="colorDefault">#000000</color>
+
+    <color name="teal_200">#03DAC5</color>
+
+    <!-- Dodane kolory dla gradientów -->
+    <color name="start_gradient_color">#e950c1</color> <!-- Kolor startowy gradientu -->
+    <color name="end_gradient_color">#1fcaf5</color> <!-- Kolor końcowy gradientu -->
+
+    <color name="start_yellow_gradient_color">#FFE84E</color> <!-- Kolor startowy dla żółtego gradientu -->
+    <color name="end_yellow_gradient_color">#FF8400</color> <!-- Kolor końcowy dla żółtego gradientu -->
+</resources>

@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="16dp">
+
+        <EditText
+            android:id="@+id/editEventTitleInput"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Tytuł wydarzenia"
+            android:inputType="text" />
+
+        <EditText
+            android:id="@+id/editEventDescriptionInput"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Opis wydarzenia"
+            android:layout_marginTop="8dp"
+            android:inputType="text" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Wybierz ikonę:"
+            android:textSize="16sp"
+            android:layout_marginTop="16dp" />
+
+        <RadioGroup
+            android:id="@+id/editIconRadioGroup"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:gravity="center"
+            android:layout_marginTop="8dp">
+
+            <RadioButton
+                android:id="@+id/editIcon1RadioButton"
+                android:layout_width="90dp"
+                android:layout_height="90dp"
+                android:button="@null"
+                android:drawableTop="@drawable/ic_event1"
+                android:gravity="center"
+                android:drawablePadding="4dp"
+                android:background="?android:attr/selectableItemBackground"
+                android:padding="8dp" />
+
+            <RadioButton
+                android:id="@+id/editIcon2RadioButton"
+                android:layout_width="90dp"
+                android:layout_height="90dp"
+                android:button="@null"
+                android:drawableTop="@drawable/ic_event2"
+                android:gravity="center"
+                android:drawablePadding="4dp"
+                android:background="?android:attr/selectableItemBackground"
+                android:padding="8dp" />
+
+            <RadioButton
+                android:id="@+id/editIcon3RadioButton"
+                android:layout_width="90dp"
+                android:layout_height="90dp"
+                android:button="@null"
+                android:drawableTop="@drawable/ic_event3"
+                android:gravity="center"
+                android:drawablePadding="4dp"
+                android:background="?android:attr/selectableItemBackground"
+                android:padding="8dp" />
+
+        </RadioGroup>
+
+    </LinearLayout>
+</ScrollView>

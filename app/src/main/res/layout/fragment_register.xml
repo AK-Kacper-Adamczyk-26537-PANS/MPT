@@ -1,0 +1,277 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/scrollViewRegister"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fillViewport="true"
+    android:fitsSystemWindows="true">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <!-- Obrazek w lewym górnym rogu bez paddingu -->
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingStart="-16dp"
+            android:paddingTop="-16dp">
+
+            <ImageView
+                android:id="@+id/register_image"
+                android:layout_width="wrap_content"
+                android:layout_height="178dp"
+                android:layout_alignParentTop="true"
+                android:layout_alignParentStart="true"
+                android:scaleType="fitStart"
+                android:src="@drawable/rejestracja_kolo" />
+
+            <TextView
+                android:id="@+id/register_title"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Rejestracja"
+                android:textSize="24sp"
+                android:textColor="#000000"
+                android:textStyle="bold"
+                android:layout_marginTop="50dp"
+                android:layout_marginStart="50dp" />
+        </RelativeLayout>
+
+        <!-- Wewnętrzny LinearLayout z paddingiem dla pól formularza -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:padding="16dp">
+
+            <!-- E-mail -->
+            <TextView
+                android:id="@+id/email_label"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="25dp"
+                android:layout_marginBottom="5dp"
+                android:text="E-mail"
+                android:textSize="16sp" />
+
+            <EditText
+                android:id="@+id/editTextEmail"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Wprowadź email"
+                android:inputType="textEmailAddress"
+                android:background="@drawable/rounded_edittext"
+                android:padding="10dp" />
+
+            <!-- LinearLayout dla pól Imię i Nazwisko -->
+            <LinearLayout
+                android:id="@+id/layoutName"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:orientation="horizontal">
+
+                <!-- Pole Imię -->
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:orientation="vertical"
+                    android:layout_marginEnd="10dp">
+
+                    <TextView
+                        android:id="@+id/first_name_label"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="5dp"
+                        android:text="Imię"
+                        android:textSize="16sp" />
+
+                    <EditText
+                        android:id="@+id/editTextFirstName"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:hint="Wprowadź imię"
+                        android:background="@drawable/rounded_edittext"
+                        android:padding="10dp" />
+                </LinearLayout>
+
+                <!-- Pole Nazwisko -->
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:id="@+id/last_name_label"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="5dp"
+                        android:text="Nazwisko"
+                        android:textSize="16sp" />
+
+                    <EditText
+                        android:id="@+id/editTextLastName"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:hint="Wprowadź nazwisko"
+                        android:background="@drawable/rounded_edittext"
+                        android:padding="10dp" />
+                </LinearLayout>
+
+            </LinearLayout>
+
+            <!-- Wiek -->
+            <TextView
+                android:id="@+id/age_label"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:layout_marginBottom="5dp"
+                android:text="Wiek"
+                android:textSize="16sp" />
+
+            <EditText
+                android:id="@+id/editTextAge"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Podaj wiek"
+                android:inputType="number"
+                android:background="@drawable/rounded_edittext"
+                android:padding="10dp" />
+
+            <!-- Kierunek studiów (Spinner) -->
+            <TextView
+                android:id="@+id/major_label"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:layout_marginBottom="5dp"
+                android:text="Kierunek studiów"
+                android:textSize="16sp" />
+
+            <Spinner
+                android:id="@+id/spinnerMajor"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/rounded_edittext" />
+
+            <!-- Telefon -->
+            <TextView
+                android:id="@+id/phone_label"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:layout_marginBottom="5dp"
+                android:text="Numer telefonu"
+                android:textSize="16sp" />
+
+            <EditText
+                android:id="@+id/editTextPhone"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Podaj numer telefonu"
+                android:inputType="phone"
+                android:maxLength="9"
+                android:background="@drawable/rounded_edittext"
+                android:padding="10dp" />
+
+            <!-- Hasło -->
+            <TextView
+                android:id="@+id/password_label"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:layout_marginBottom="5dp"
+                android:text="Hasło"
+                android:textSize="16sp" />
+
+            <RelativeLayout
+                android:id="@+id/layoutPassword"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="0dp">
+
+                <EditText
+                    android:id="@+id/editTextPassword"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="Wprowadź hasło"
+                    android:inputType="textPassword"
+                    android:background="@drawable/rounded_edittext"
+                    android:padding="10dp" />
+
+                <ImageView
+                    android:id="@+id/imageViewShowPassword"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentEnd="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginEnd="10dp"
+                    android:src="@drawable/hidden"
+                    android:contentDescription="Pokaż hasło" />
+            </RelativeLayout>
+
+            <!-- Potwierdzenie hasła -->
+            <TextView
+                android:id="@+id/confirm_password_label"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:layout_marginBottom="5dp"
+                android:text="Potwierdź hasło"
+                android:textSize="16sp" />
+
+            <RelativeLayout
+                android:id="@+id/layoutConfirmPassword"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="0dp">
+
+                <EditText
+                    android:id="@+id/editTextConfirmPassword"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="Potwierdź hasło"
+                    android:inputType="textPassword"
+                    android:background="@drawable/rounded_edittext"
+                    android:padding="10dp" />
+
+                <ImageView
+                    android:id="@+id/imageViewShowConfirmPassword"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentEnd="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginEnd="10dp"
+                    android:src="@drawable/hidden"
+                    android:contentDescription="Pokaż potwierdzenie hasła" />
+            </RelativeLayout>
+
+            <!-- Błąd hasła -->
+            <TextView
+                android:id="@+id/password_error"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:layout_marginStart="30dp"
+                android:text="Hasła się nie zgadzają"
+                android:textColor="#FF0000"
+                android:visibility="gone" />
+
+            <!-- Przycisk rejestracji -->
+            <Button
+                android:id="@+id/buttonRegister"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Zarejestruj się"
+                android:background="@drawable/button"
+                android:textColor="@color/buttonText"
+                android:layout_marginTop="30dp"
+                android:layout_marginBottom="20dp" />
+        </LinearLayout>
+    </LinearLayout>
+</ScrollView>

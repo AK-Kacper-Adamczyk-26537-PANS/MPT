@@ -1,0 +1,367 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:card_view="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/scrollViewEditTask"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="16dp"
+    android:layout_marginVertical="70dp">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <!-- Tytuł Zadania -->
+        <androidx.cardview.widget.CardView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            card_view:cardElevation="4dp"
+            card_view:cardCornerRadius="12dp"
+            android:layout_marginTop="16dp"
+            android:layout_marginBottom="16dp"
+            android:background="@color/background_color">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:padding="16dp"
+                android:gravity="center_vertical">
+
+                <ImageView
+                    android:layout_width="24dp"
+                    android:layout_height="24dp"
+                    android:src="@drawable/ic_task_title"
+                    card_view:tint="@color/teal_200"
+                    android:contentDescription="Ikona tytułu zadania" />
+
+                <EditText
+                    android:id="@+id/editTextTaskTitle"
+                    style="@style/TaskTitleStyle"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:hint="Tytuł zadania"
+                    android:inputType="textPersonName"
+                    android:background="@color/editTextBackgroundColor"
+                    android:textColor="@color/editTextColor"
+                    android:paddingStart="16dp"
+                    android:paddingVertical="5dp"
+                    android:layout_marginStart="16dp" /> <!-- Dodany odstęp między ikoną a tekstem -->
+            </LinearLayout>
+        </androidx.cardview.widget.CardView>
+
+        <!-- Opis Zadania -->
+        <androidx.cardview.widget.CardView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            card_view:cardElevation="4dp"
+            card_view:cardCornerRadius="12dp"
+            android:layout_marginTop="16dp"
+            android:layout_marginBottom="16dp"
+            android:background="@color/background_color">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:padding="16dp"
+                android:gravity="center_vertical">
+
+                <ImageView
+                    android:layout_width="24dp"
+                    android:layout_height="24dp"
+                    android:src="@drawable/ic_description"
+                    card_view:tint="@color/teal_200"
+                    android:contentDescription="Ikona opisu zadania" />
+
+                <EditText
+                    android:id="@+id/editTextTaskDescription"
+                    style="@style/TaskDescriptionStyle"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:hint="Opis zadania"
+                    android:inputType="textMultiLine"
+                    android:minLines="1"
+                    android:gravity="top"
+                    android:background="@color/editTextBackgroundColor"
+                    android:textColor="@color/editTextColor"
+                    android:paddingStart="16dp"
+                    android:paddingVertical="5dp"
+                    android:layout_marginStart="16dp" /> <!-- Dodany odstęp między ikoną a tekstem -->
+            </LinearLayout>
+        </androidx.cardview.widget.CardView>
+
+        <!-- Data Rozpoczęcia -->
+        <androidx.cardview.widget.CardView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            card_view:cardElevation="4dp"
+            card_view:cardCornerRadius="12dp"
+            android:layout_marginTop="16dp"
+            android:layout_marginBottom="16dp"
+            android:background="@color/background_color">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:padding="16dp"
+                android:gravity="center_vertical">
+
+                <ImageView
+                    android:layout_width="24dp"
+                    android:layout_height="24dp"
+                    android:src="@drawable/ic_calendar"
+                    card_view:tint="@color/teal_200"
+                    android:contentDescription="Ikona daty rozpoczęcia" />
+
+                <TextView
+                    android:id="@+id/textViewStartDate"
+                    style="@style/TaskLabelStyle"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Data rozpoczęcia:"
+                    android:layout_marginStart="16dp" />
+            </LinearLayout>
+        </androidx.cardview.widget.CardView>
+
+        <Button
+            android:id="@+id/buttonSelectStartDate"
+            style="@style/TaskButtonStyle"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Wybierz datę rozpoczęcia"
+            android:layout_marginTop="8dp" /> <!-- Zwiększony odstęp -->
+
+        <!-- Data Zakończenia -->
+        <androidx.cardview.widget.CardView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            card_view:cardElevation="4dp"
+            card_view:cardCornerRadius="12dp"
+            android:layout_marginTop="16dp"
+            android:layout_marginBottom="16dp"
+            android:background="@color/background_color">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:padding="16dp"
+                android:gravity="center_vertical">
+
+                <ImageView
+                    android:layout_width="24dp"
+                    android:layout_height="24dp"
+                    android:src="@drawable/ic_calendar"
+                    card_view:tint="@color/teal_200"
+                    android:contentDescription="Ikona daty zakończenia" />
+
+                <TextView
+                    android:id="@+id/textViewEndDate"
+                    style="@style/TaskLabelStyle"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Data zakończenia:"
+                    android:layout_marginStart="16dp" />
+            </LinearLayout>
+        </androidx.cardview.widget.CardView>
+
+        <Button
+            android:id="@+id/buttonSelectEndDate"
+            style="@style/TaskButtonStyle"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Wybierz datę zakończenia"
+            android:layout_marginTop="8dp" /> <!-- Zwiększony odstęp -->
+
+        <!-- Data Wykonania -->
+        <androidx.cardview.widget.CardView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            card_view:cardElevation="4dp"
+            card_view:cardCornerRadius="12dp"
+            android:layout_marginTop="16dp"
+            android:layout_marginBottom="16dp"
+            android:background="@color/background_color">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:padding="16dp"
+                android:gravity="center_vertical">
+
+                <ImageView
+                    android:layout_width="24dp"
+                    android:layout_height="24dp"
+                    android:src="@drawable/ic_info"
+                    card_view:tint="@color/teal_200"
+                    android:contentDescription="Ikona daty wykonania" />
+
+                <TextView
+                    android:id="@+id/textViewDueDate"
+                    style="@style/TaskLabelStyle"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Data wykonania:"
+                    android:layout_marginStart="16dp" />
+            </LinearLayout>
+        </androidx.cardview.widget.CardView>
+
+        <Button
+            android:id="@+id/buttonSelectDueDate"
+            style="@style/TaskButtonStyle"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Wybierz datę"
+            android:layout_marginTop="8dp" /> <!-- Zwiększony odstęp -->
+
+        <!-- Priorytet -->
+        <androidx.cardview.widget.CardView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            card_view:cardElevation="4dp"
+            card_view:cardCornerRadius="12dp"
+            android:layout_marginTop="16dp"
+            android:layout_marginBottom="16dp"
+            android:background="@color/background_color">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:padding="16dp"
+                android:gravity="center_vertical">
+
+                <ImageView
+                    android:layout_width="24dp"
+                    android:layout_height="24dp"
+                    android:src="@drawable/prioritize"
+                    card_view:tint="@color/teal_200"
+                    android:contentDescription="Ikona priorytetu" />
+
+                <TextView
+                    android:id="@+id/textViewPriority"
+                    style="@style/TaskLabelStyle"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Priorytet:"
+                    android:layout_marginStart="16dp" />
+            </LinearLayout>
+        </androidx.cardview.widget.CardView>
+
+        <Spinner
+            android:id="@+id/spinnerPriority"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp" /> <!-- Zwiększony odstęp -->
+
+        <!-- Postęp -->
+        <androidx.cardview.widget.CardView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            card_view:cardElevation="4dp"
+            card_view:cardCornerRadius="12dp"
+            android:layout_marginTop="16dp"
+            android:layout_marginBottom="16dp"
+            android:background="@color/background_color">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:padding="16dp"
+                android:gravity="center_vertical">
+
+                <ImageView
+                    android:layout_width="24dp"
+                    android:layout_height="24dp"
+                    android:src="@drawable/progress"
+                    card_view:tint="@color/teal_200"
+                    android:contentDescription="Ikona postępu" />
+
+                <TextView
+                    android:id="@+id/textViewProgress"
+                    style="@style/TaskLabelStyle"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Postęp:"
+                    android:layout_marginStart="16dp" />
+            </LinearLayout>
+        </androidx.cardview.widget.CardView>
+
+        <RatingBar
+            android:id="@+id/ratingBarProgress"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:numStars="5"
+            android:stepSize="1"
+            android:isIndicator="false"
+            android:layout_marginTop="8dp" /> <!-- Zwiększony odstęp -->
+
+        <!-- Lista Członków -->
+        <androidx.cardview.widget.CardView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            card_view:cardElevation="4dp"
+            card_view:cardCornerRadius="12dp"
+            android:layout_marginTop="16dp"
+            android:layout_marginBottom="16dp"
+            android:background="@color/background_color">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:padding="16dp"
+                android:gravity="center_vertical">
+
+                <ImageView
+                    android:layout_width="24dp"
+                    android:layout_height="24dp"
+                    android:src="@drawable/ic_members"
+                    card_view:tint="@color/teal_200"
+                    android:contentDescription="Ikona członków" />
+
+                <TextView
+                    android:id="@+id/textViewSelectMembers"
+                    style="@style/TaskLabelStyle"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Wybierz członków:"
+                    android:layout_marginStart="16dp" />
+            </LinearLayout>
+        </androidx.cardview.widget.CardView>
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/recyclerViewMembers"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:scrollbars="vertical" />
+
+        <!-- Przycisk Aktualizacji Zadania -->
+        <Button
+            android:id="@+id/buttonUpdateTask"
+            style="@style/TaskButtonStyle"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Aktualizuj zadanie"
+            android:layout_marginTop="24dp"
+            android:layout_marginBottom="8dp" /> <!-- Zwiększony odstęp -->
+
+        <!-- Przycisk Usunięcia Zadania -->
+        <Button
+            android:id="@+id/delete_task_button"
+            style="@style/TaskDeleteButtonStyle"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Usuń zadanie"
+            android:layout_marginTop="8dp"
+            android:layout_marginBottom="30dp" />
+    </LinearLayout>
+</ScrollView>

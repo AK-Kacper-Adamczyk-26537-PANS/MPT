@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal"
+    android:padding="12dp"
+    android:background="?attr/selectableItemBackground"
+    android:gravity="center_vertical">
+
+    <ImageView
+        android:id="@+id/eventIconImageView"
+        android:layout_width="24dp"
+        android:layout_height="24dp"
+        android:layout_marginEnd="16dp"
+        android:contentDescription="Icona wydarzenia"
+        android:src="@drawable/ic_event1" /> <!-- Domyślna ikona -->
+
+    <TextView
+        android:id="@+id/eventDateTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="2024-12-01"
+        android:textSize="16sp"
+        android:textStyle="bold"
+        android:layout_marginEnd="16dp" />
+
+    <TextView
+        android:id="@+id/eventTitleTextView"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:text="Nazwa Wydarzenia"
+        android:textSize="16sp"
+        android:layout_weight="1" />
+
+</LinearLayout>

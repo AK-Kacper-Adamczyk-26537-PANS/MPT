@@ -1,0 +1,439 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_marginBottom="60dp">
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <!-- Baner -->
+        <ImageView
+            android:id="@+id/banner_image"
+            android:layout_width="match_parent"
+            android:layout_height="250dp"
+            android:scaleType="centerCrop"
+            android:src="@drawable/office" /> <!-- Domyślny baner -->
+
+        <!-- Sekcja Logo i Nazwy Koła -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:gravity="center_vertical"
+            android:layout_marginTop="-70dp"
+            android:layout_marginBottom="16dp">
+
+            <!-- Nazwa koła -->
+            <TextView
+                android:id="@+id/club_name"
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="wrap_content"
+                android:text="Nazwa Koła Naukowego"
+                android:textStyle="bold"
+                android:textSize="24sp"
+                android:paddingEnd="16dp"
+                android:gravity="center"
+                android:layout_marginTop="40dp"
+                android:layout_marginHorizontal="20dp"/>
+
+            <!-- Logo klubu -->
+            <ImageView
+                android:id="@+id/club_image"
+                android:layout_width="140dp"
+                android:layout_height="140dp"
+                android:padding="10dp"
+                android:scaleType="centerCrop"
+                android:src="@drawable/image1" /> <!-- Domyślne logo klubu -->
+
+        </LinearLayout>
+
+        <!-- Opis koła -->
+        <TextView
+            android:id="@+id/club_description"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Opis koła naukowego..."
+            android:textSize="16sp"
+            android:layout_marginTop="8dp"
+            android:layout_marginHorizontal="30dp"
+            android:layout_gravity="center_horizontal" />
+
+        <!-- Pełnoekranowy obraz -->
+        <!-- Zastąp własnym obrazem -->
+
+        <!-- Graficzne przyciski w jednej linii -->
+        <ImageView
+            android:id="@+id/fullimage"
+            android:layout_width="match_parent"
+            android:layout_height="200dp"
+            android:layout_marginHorizontal="20dp"
+            android:layout_marginTop="25dp"
+            android:scaleType="centerInside"
+            android:src="@drawable/neo_baner_1" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:gravity="center"
+            android:layout_marginTop="24dp">
+
+            <!-- Przycisk: Zadania -->
+            <LinearLayout
+                android:id="@+id/buttonTasks"
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:gravity="center"
+                android:padding="8dp"
+                android:clickable="true"
+                android:foreground="?attr/selectableItemBackground"
+                android:background="@drawable/rounded_corners"
+                android:layout_margin="10dp">
+
+                <ImageView
+                    android:layout_width="50dp"
+                    android:layout_height="50dp"
+                    android:src="@drawable/ic_task" /> <!-- Ikona zadań -->
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Zadania"
+                    android:textSize="14sp"
+                    android:gravity="center"
+                    android:textColor="@android:color/black" />
+            </LinearLayout>
+
+            <!-- Przycisk: Notatki -->
+            <LinearLayout
+                android:id="@+id/buttonNotes"
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:gravity="center"
+                android:padding="8dp"
+                android:clickable="true"
+                android:foreground="?attr/selectableItemBackground"
+                android:background="@drawable/rounded_corners"
+                android:layout_margin="10dp">
+
+                <ImageView
+                    android:layout_width="50dp"
+                    android:layout_height="50dp"
+                    android:src="@drawable/ic_description" /> <!-- Ikona notatek -->
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Notatki"
+                    android:textSize="14sp"
+                    android:gravity="center"
+                    android:textColor="@android:color/black" />
+            </LinearLayout>
+
+            <!-- Przycisk: Członkowie -->
+            <LinearLayout
+                android:id="@+id/buttonMembers"
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:gravity="center"
+                android:padding="8dp"
+                android:clickable="true"
+                android:foreground="?attr/selectableItemBackground"
+                android:background="@drawable/rounded_corners"
+                android:layout_margin="10dp">
+
+                <ImageView
+                    android:layout_width="50dp"
+                    android:layout_height="50dp"
+                    android:src="@drawable/ic_members" /> <!-- Ikona członków -->
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Członkowie"
+                    android:textSize="14sp"
+                    android:gravity="center"
+                    android:textColor="@android:color/black" />
+            </LinearLayout>
+
+        </LinearLayout>
+
+        <!-- Nowe przyciski w jednej linii -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:gravity="center"
+            android:layout_marginTop="16dp">
+
+            <!-- Przycisk: Czat -->
+            <LinearLayout
+                android:id="@+id/buttonChat"
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:gravity="center"
+                android:padding="8dp"
+                android:clickable="true"
+                android:foreground="?attr/selectableItemBackground"
+                android:background="@drawable/rounded_corners"
+                android:layout_margin="10dp">
+
+                <ImageView
+                    android:layout_width="50dp"
+                    android:layout_height="50dp"
+                    android:src="@drawable/ic_chat" /> <!-- Ikona czatu -->
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Czat"
+                    android:textSize="14sp"
+                    android:gravity="center"
+                    android:textColor="@android:color/black" />
+            </LinearLayout>
+
+            <!-- Przycisk: Kalendarz -->
+            <LinearLayout
+                android:id="@+id/buttonCalendar"
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:gravity="center"
+                android:padding="8dp"
+                android:clickable="true"
+                android:foreground="?attr/selectableItemBackground"
+                android:background="@drawable/rounded_corners"
+                android:layout_margin="10dp">
+
+                <ImageView
+                    android:layout_width="50dp"
+                    android:layout_height="50dp"
+                    android:src="@drawable/ic_calendar" /> <!-- Ikona kalendarza -->
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Kalendarz"
+                    android:textSize="14sp"
+                    android:gravity="center"
+                    android:textColor="@android:color/black" />
+            </LinearLayout>
+
+            <!-- Przycisk: Sprzęt -->
+            <LinearLayout
+                android:id="@+id/buttonEquipment"
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:gravity="center"
+                android:padding="8dp"
+                android:clickable="true"
+                android:foreground="?attr/selectableItemBackground"
+                android:background="@drawable/rounded_corners"
+                android:layout_margin="10dp">
+
+                <ImageView
+                    android:layout_width="50dp"
+                    android:layout_height="50dp"
+                    android:src="@drawable/ic_equipment" /> <!-- Ikona sprzętu -->
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Sprzęt"
+                    android:textSize="14sp"
+                    android:gravity="center"
+                    android:textColor="@android:color/black" />
+            </LinearLayout>
+
+        </LinearLayout>
+
+        <!-- Nowe Sekcje Dodane Poniżej -->
+
+        <!-- Nowa Sekcja: Nowości/Ciekawe Artykuły -->
+        <LinearLayout
+            android:id="@+id/sectionNews"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:padding="16dp"
+            android:layout_marginTop="16dp"
+            android:background="@drawable/yellow_gradient_background">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Nowości i Ciekawe Artykuły"
+                android:textSize="20sp"
+                android:textStyle="bold"
+                android:layout_marginBottom="8dp" />
+
+            <TextView
+                android:id="@+id/textViewNews"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Tutaj będą najnowsze artykuły i linki do interesujących stron."
+                android:textSize="16sp"
+                android:textColor="@android:color/black" />
+        </LinearLayout>
+
+        <!-- Nowa Sekcja: Galeria -->
+        <ImageView
+            android:id="@+id/gallery_banner"
+            android:layout_width="match_parent"
+            android:layout_height="200dp"
+            android:layout_marginTop="16dp"
+            android:layout_marginHorizontal="20dp"
+            android:scaleType="centerInside"
+            android:clickable="true"
+            android:src="@drawable/gallery_banner" /> <!-- Zastąp własnym obrazem -->
+
+        <!-- Sekcje Statystyki i Quizy/Ankiety obok siebie -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:gravity="center"
+            android:layout_marginHorizontal="20dp"
+            android:layout_marginVertical="30dp">
+
+            <!-- Sekcja: Statystyki Koła -->
+            <LinearLayout
+                android:id="@+id/buttonStatistics"
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="100dp"
+                android:orientation="horizontal"
+                android:gravity="center_vertical"
+                android:padding="16dp"
+                android:background="@drawable/quiz_background"
+            android:clickable="true"
+            android:foreground="?attr/selectableItemBackground"
+            android:layout_marginEnd="10dp">
+
+            <!-- Tekst: Statystyki Koła -->
+            <TextView
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="wrap_content"
+                android:text="Statystyki Koła"
+                android:textSize="14sp"
+                android:textStyle="bold"
+                android:textColor="@android:color/white"
+                android:gravity="start" /> <!-- Wyjustowanie tekstu do początku -->
+
+            <!-- Ikona: Statystyki -->
+            <ImageView
+                android:layout_width="60dp"
+                android:layout_height="60dp"
+                android:src="@drawable/ic_statistics"
+                app:tint="@color/white" /> <!-- Ikona statystyk z białym tintem -->
+
+        </LinearLayout>
+
+            <!-- Sekcja: Quizy/Ankiety -->
+            <LinearLayout
+                android:id="@+id/buttonQuizzes"
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="100dp"
+                android:orientation="horizontal"
+                android:gravity="center"
+                android:padding="16dp"
+                android:background="@drawable/quiz_background"
+                android:clickable="true"
+                android:foreground="?attr/selectableItemBackground"
+                android:layout_marginStart="10dp">
+
+                <ImageView
+                    android:layout_width="60dp"
+                    android:layout_height="60dp"
+                    android:src="@drawable/ic_quiz"
+                    app:tint="@color/white" /> <!-- Ikona quizów -->
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Quizy i Ankiety"
+                    android:textSize="14sp"
+                    android:textStyle="bold"
+                    android:textAlignment="textEnd"
+                    android:layout_marginStart="16dp"
+                    android:textColor="@android:color/white" />
+            </LinearLayout>
+
+        </LinearLayout>
+
+        <!-- Nowa Sekcja: Panel Ogłoszeń -->
+        <LinearLayout
+            android:id="@+id/sectionAnnouncements"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:padding="16dp"
+            android:background="@drawable/yellow_gradient_background">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Panel Ogłoszeń"
+                android:textSize="20sp"
+                android:textStyle="bold"
+                android:layout_marginBottom="8dp" />
+
+            <TextView
+                android:id="@+id/textViewAnnouncements"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Tutaj będą najnowsze ogłoszenia dotyczące koła."
+                android:textSize="16sp"
+                android:textColor="@android:color/black" />
+        </LinearLayout>
+
+        <!-- Scrollowany baner -->
+        <HorizontalScrollView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp">
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_marginBottom="20dp">
+
+                <ImageView
+                    android:layout_width="400dp"
+                    android:layout_height="200dp"
+                    android:layout_marginHorizontal="10dp"
+                    android:src="@drawable/girl_it"
+                    android:scaleType="centerInside" /> <!-- Pierwszy obraz -->
+
+                <ImageView
+                    android:layout_width="400dp"
+                    android:layout_height="200dp"
+                    android:layout_marginHorizontal="10dp"
+                    android:src="@drawable/girl_it"
+                    android:scaleType="centerInside" /> <!-- Drugi obraz -->
+
+            </LinearLayout>
+
+        </HorizontalScrollView>
+
+    </LinearLayout>
+</ScrollView>

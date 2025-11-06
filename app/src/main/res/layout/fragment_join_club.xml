@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="16dp"
+    android:gravity="center">
+
+    <!-- Nazwa klubu do wyświetlenia pytania -->
+    <TextView
+        android:id="@+id/club_name_text_view"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Czy chcesz dołączyć do [nazwa klubu]?"
+        android:textSize="18sp"
+        android:paddingBottom="16dp"
+        android:gravity="center"
+        android:textAlignment="center" />
+
+    <!-- Przycisk do dołączenia do klubu -->
+    <Button
+        android:id="@+id/join_club_button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Dołącz"
+        android:textAllCaps="false"
+        android:background="@drawable/custom_button_background"
+        android:textColor="@color/black"
+        android:paddingHorizontal="20dp"
+        android:padding="10dp" />
+
+</LinearLayout>

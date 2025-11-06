@@ -1,0 +1,44 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+<!--    &lt;!&ndash; Baner na górze &ndash;&gt;-->
+<!--    <ImageView-->
+<!--        android:id="@+id/banner_image"-->
+<!--        android:layout_width="match_parent"-->
+<!--        android:layout_height="200dp"-->
+<!--        android:scaleType="centerCrop"-->
+<!--        android:src="@drawable/happy" />-->
+
+<!--    &lt;!&ndash; Logo koła naukowego, poniżej banera &ndash;&gt;-->
+<!--    <ImageView-->
+<!--        android:id="@+id/circle_logo"-->
+<!--        android:layout_width="100dp"-->
+<!--        android:layout_height="100dp"-->
+<!--        android:layout_below="@id/banner_image"-->
+<!--    android:layout_centerHorizontal="true"-->
+<!--    android:layout_marginTop="16dp"-->
+<!--    android:src="@drawable/woman_home" />-->
+
+<!--    &lt;!&ndash; Nazwa koła &ndash;&gt;-->
+<!--    <TextView-->
+<!--        android:id="@+id/circle_name"-->
+<!--        android:layout_width="wrap_content"-->
+<!--        android:layout_height="wrap_content"-->
+<!--        android:layout_below="@id/circle_logo"-->
+<!--        android:layout_centerHorizontal="true"-->
+<!--        android:layout_marginTop="16dp"-->
+<!--        android:textSize="24sp"-->
+<!--        android:textStyle="bold"-->
+<!--        android:textColor="@android:color/white" />-->
+
+<!--    &lt;!&ndash; Opis koła &ndash;&gt;-->
+<!--    <TextView-->
+<!--        android:id="@+id/circle_description"-->
+<!--        android:layout_width="match_parent"-->
+<!--        android:layout_height="wrap_content"-->
+<!--        android:layout_below="@id/circle_name"-->
+<!--        android:layout_margin="16dp"-->
+<!--        android:textSize="16sp"-->
+<!--        android:textColor="@android:color/black" />-->
+</RelativeLayout>
