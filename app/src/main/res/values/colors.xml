@@ -1,38 +1,47 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
-    <!-- Istniejące kolory -->
-    <color name="background_color">#FFFFFF</color> <!-- Biały tło -->
-    <color name="text_color">#000000</color> <!-- Czarny tekst -->
+    <!-- Tło i tekst -->
+    <color name="background_color">#FFF8E1</color> <!-- Bardzo jasny, kremowo-żółty -->
+    <color name="text_color">#212121</color> <!-- Ciemnoszary tekst (lepszy niż czarny) -->
 
-    <color name="buttonBackground">#C0F7F7</color> <!-- Tło przycisku -->
-    <color name="buttonText">#000000</color> <!-- Tekst przycisku -->
-    <color name="buttonBorder">#FF35C5C5</color> <!-- Obramówka przycisku -->
+    <!-- Przyciski -->
+    <color name="buttonBackground">#FFC107</color> <!-- Amber (żółto–pomarańczowy) -->
+    <color name="buttonText">#212121</color> <!-- Ciemny tekst na jasnym przycisku -->
+    <color name="buttonBorder">#FFA000</color> <!-- Ciemniejszy pomarańczowy jako obramówka -->
 
-    <color name="editTextColor">#000000</color> <!-- Kolor tekstu w polach -->
-    <color name="editTextBackgroundColor">#F3F3F3</color> <!-- Kolor tła w polach -->
-    <color name="editTextBorderColor">#FF616161</color> <!-- Kolor obramowania w polach -->
+    <!-- Pola tekstowe -->
+    <color name="editTextColor">#212121</color> <!-- Tekst w polach -->
+    <color name="editTextBackgroundColor">#FFF3CD</color> <!-- Delikatny żółtawy dla pól -->
+    <color name="editTextBorderColor">#FFB74D</color> <!-- Pomarańczowa obwódka -->
 
-    <color name="navigation_bar_color">#FFFFFF</color> <!-- Kolor paska nawigacyjnego -->
-    <color name="status_bar_color">#FFFFFF</color> <!-- Kolor paska statusu -->
+    <!-- Systemowe paski -->
+    <color name="navigation_bar_color">#FFE082</color> <!-- Jasny żółty -->
+    <color name="status_bar_color">#FFB300</color> <!-- Ciemniejszy żółty/pomarańczowy -->
 
+    <!-- Podstawowe kolory -->
     <color name="white">#FFFFFF</color>
     <color name="black">#000000</color>
     <color name="gray">#808080</color>
-    <color name="primary">#FF6200EE</color>
-    <color name="red">#FF0000</color>
-    <color name="purple_500">#6200EE</color>
 
-    <color name="colorPrimary">#3F51B5</color>
-    <color name="colorAccent">#FF4081</color>
-    <color name="colorWarning">#FF9800</color>
-    <color name="colorDefault">#000000</color>
+    <!-- Kolory "aplikacyjne" -->
+    <color name="primary">#FFC107</color> <!-- Główny kolor aplikacji -->
+    <color name="red">#FF5252</color> <!-- Delikatnie zmiękczona czerwień (błędy) -->
+    <color name="purple_500">#6200EE</color> <!-- Jeśli gdzieś używana, zostawiona bez zmian -->
 
-    <color name="teal_200">#03DAC5</color>
+    <!-- Material / legacy -->
+    <color name="colorPrimary">#FFC107</color> <!-- Żółty primary -->
+    <color name="colorAccent">#FF9800</color> <!-- Pomarańczowy accent -->
+    <color name="colorWarning">#FF5722</color> <!-- Głębszy pomarańczowo-czerwony jako warning -->
+    <color name="colorDefault">#212121</color>
 
-    <!-- Dodane kolory dla gradientów -->
-    <color name="start_gradient_color">#e950c1</color> <!-- Kolor startowy gradientu -->
-    <color name="end_gradient_color">#1fcaf5</color> <!-- Kolor końcowy gradientu -->
+    <!-- Dodatkowy żółty zamiast zielonkawego teal_200 -->
+    <color name="teal_200">#FFE082</color>
 
-    <color name="start_yellow_gradient_color">#FFE84E</color> <!-- Kolor startowy dla żółtego gradientu -->
-    <color name="end_yellow_gradient_color">#FF8400</color> <!-- Kolor końcowy dla żółtego gradientu -->
+    <!-- Gradienty główne -->
+    <color name="start_gradient_color">#FFC107</color> <!-- Start: mocniejszy żółty -->
+    <color name="end_gradient_color">#FF9800</color> <!-- Koniec: pomarańczowy -->
+
+    <!-- Gradient typowo żółty -->
+    <color name="start_yellow_gradient_color">#FFF8E1</color> <!-- Bardzo jasny żółty -->
+    <color name="end_yellow_gradient_color">#FFB300</color> <!-- Ciemniejszy żółty -->
 </resources>

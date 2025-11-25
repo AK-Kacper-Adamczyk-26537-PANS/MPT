@@ -1,5 +1,5 @@
 <resources>
-    <string name="app_name">firebaseapp</string>
+    <string name="app_name">MPT_app</string>
 
     <string-array name="major_options">
         <item>Automatyka i Robotyka</item>

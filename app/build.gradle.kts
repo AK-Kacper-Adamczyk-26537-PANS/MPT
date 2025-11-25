@@ -4,11 +4,11 @@ plugins {
 }
 
 android {
-    namespace = "com.example.firebaseapp"
+    namespace = "com.example.mpt_app"
     compileSdk = 34
 
     defaultConfig {
-        applicationId = "com.example.firebaseapp"
+        applicationId = "com.example.mpt_app"
         minSdk = 29
         targetSdk = 34
         versionCode = 1
@@ -30,7 +30,7 @@ android {
 }
 
 dependencies {
-    implementation(platform("com.google.firebase:firebase-bom:33.2.0"))
+    implementation(platform("com.google.firebase:firebase-bom:34.6.0"))
     implementation("com.google.firebase:firebase-analytics")
     implementation("com.google.firebase:firebase-auth") // Dodaj Firebase Auth
     implementation("com.google.firebase:firebase-firestore") // Dodaj Firestore

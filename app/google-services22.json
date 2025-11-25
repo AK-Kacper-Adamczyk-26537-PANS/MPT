@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "891966717327",
+    "project_id": "inzynierka2-5f368",
+    "storage_bucket": "inzynierka2-5f368.firebasestorage.app"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:891966717327:android:10e3ca1bd7326c97235ffa",
+        "android_client_info": {
+          "package_name": "com.example.firebaseapp"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyC-ksZHsh6HIFLKAuMUsCGLDyyfT10zCLw"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
